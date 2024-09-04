@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUNEZJS</title>
+</head>
+<script>
+    function displayMe(text, grade1, grade2, grade3, grade4, grade5){
+        var textValue = document.getElementById('text').value;
+        var textValue1 = document.getElementById('grd1').value;
+        var textValue2 = document.getElementById('grd2').value;
+        var textValue3 = document.getElementById('grd3').value;
+        var textValue4 = document.getElementById('grd4').value;
+        var textValue5 = document.getElementById('grd5').value;
+
+        var total = Number(textValue1) + Number (textValue2) + Number (textValue3 ) + Number (textValue4) + Number(textValue5) ;
+        var totalAverage = total / 5;
+        alert("Name: " + textValue + "\n" + "IP1: " + textValue1 + "\n" + "IMI: " + textValue2 + "\n" + "OOP: " + textValue3 + "\n" + "EDP: " + textValue4 + "\n" + "HCI2" + textValue5 + "\n" + "Average: " + totalAverage)
+    }
+
+</script>
+<body>
+    <b>NAME:</b>
+    <input type="string" id="text"><br><br>
+    <b>GRADE</b><br><br>
+    <b>IP1:</b>
+    <input type="number" id="grd1"><br><br> 
+    <b>IMI:</b>
+    <input type="number" id="grd2"><br><br>
+    <b>OOP:</b>
+    <input type="number" id="grd3"><br><br>
+    <b>EDP:</b>
+    <input type="number" id="grd4"><br><br>
+    <b>HCI2:</b>
+    <input type="number" id="grd5"><br><br>
+
+    <button onclick="displayMe(text, grd1, grd2, grd3, grd4, grd5)">CALCULATE</button>
+</body>
+</html>
